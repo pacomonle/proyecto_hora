@@ -50,7 +50,7 @@ public class MainController {
         fechaNac.set(Calendar.MONTH, amonths);
         fechaNac.set(Calendar.DAY_OF_MONTH,adays);
 
-        String resultado = " Si naciste el 25-12.-19888 , tu edad es "
+        String resultado = " Si naciste el 25-12-1988 , tu edad es "
                 + ce.calculaEdad((GregorianCalendar) fechaNac);
         
        
