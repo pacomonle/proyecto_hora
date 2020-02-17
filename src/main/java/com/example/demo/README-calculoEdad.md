@@ -1,3 +1,33 @@
+# EJERCICIO
+
+Quiero un endpoint ('/edad') en el controlador que, pasándole por parámetro GET el año, mes y día de nacimiento nos devuelva la edad. 
+
+La edad será un método de TimeService.
+
+Para crear una fecha desde los tres elementos:
+
+```java
+
+// Parámetros de la request day, month, year
+
+int aday = Integer.parseInt(day);  // 25
+int amonth = Integer.parseInt(month); // 12
+int ayear = Integer.parseInt(year); // 1988
+
+System.out.println(year);
+
+Calendar c = Calendar.getInstance();
+c.set(year, month - 1, day, 0, 0);  
+
+```
+
+#### Restas y otras operaciones de calendario
+
+http://developando.com/blog/java-sumar-restar-horas-dias-fecha/
+
+* SOLUCION
+
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
  
@@ -58,12 +88,8 @@ private int calculaEdad(Calendar fechaNac) {
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-/**
-@Autor: www.javerosanonimos.com
-Twitter: @javerosanonimos
-Facebook: www.facebook.com/JaverosAnonimos   
-e-mail: javerosanonimos@gmail.com
-**/
+
+
 class CalculaFecha {
    public static void main(String []args){
 //Accedemos al metodo estatico a través del nombre de nuestra clase
