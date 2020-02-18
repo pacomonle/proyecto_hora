@@ -32,10 +32,11 @@ public class TimeServiceImpl implements TimeService {
 
 // implementamos el metodo calculaEdad y el atributo tipo Calendar fechaNac 
  
-  private Calendar fechaNac;
+
 
    @Override
-   public int calculaEdad(GregorianCalendar gregorianCalendar) {
+   public int calculaEdad(GregorianCalendar fechaNac) {
+    
     
 
  // calculaEdad es un metodo que devuelve un entero y tiene como variable un Calendar   
@@ -63,13 +64,11 @@ public class TimeServiceImpl implements TimeService {
    return years;
   }
   
-// Constructor
+// Constructor haz dejarlo por defecto
   
-  public TimeServiceImpl(Calendar time, Calendar fechaNac) {
+  public TimeServiceImpl() {
     time = new GregorianCalendar(); 
-    fechaNac = new GregorianCalendar() ;
-
-
+   // GregorianCalendar fechaNac = new GregorianCalendar(); ya esta introducida comoparametro en el metodo
   }
 
 
