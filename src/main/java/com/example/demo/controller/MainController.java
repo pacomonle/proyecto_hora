@@ -51,7 +51,7 @@ public class MainController {
         Calendar fechaNac = new GregorianCalendar();
         fechaNac.set(Calendar.YEAR, ayears);
         fechaNac.set(Calendar.MONTH, amonths);
-        fechaNac.set(Calendar.DAY_OF_MONTH,adays);
+        fechaNac.set(Calendar.DAY_OF_MONTH, adays);
 
         String resultado = " Si naciste el " + fechaNac.get(Calendar.DAY_OF_MONTH) + " / " + fechaNac.get(Calendar.MONTH) + " / " + fechaNac.get(Calendar.YEAR) + " , tu edad es de "
                 + ts.calculaEdad((GregorianCalendar) fechaNac) + " años chavalote. ";
